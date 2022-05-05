@@ -104,7 +104,7 @@
     "test-browserstack": "node bin/browserstack-jasmine.js",
     "test-node": "jasmine test/spec/node-index.js",
     "test-types": "tsd",
-    "test": "ls bin && bin/test && npm run test-types",
+    "test": "cd bin && pwd && ./test && npm run test-types",
     "lint": "eslint ."
   }
 }
