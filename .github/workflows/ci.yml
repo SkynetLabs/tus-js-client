@@ -27,4 +27,7 @@ jobs:
       - run: yarn lint
       # Needed for yarn test.
       - run: yarn build
-      - run: yarn test
+      - if: ${{ runner.os != 'Windows' }}
+        run: yarn test
+      - if: ${{ runner.os == 'Windows' }}
+        run: yarn test-windows
