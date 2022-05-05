@@ -233,9 +233,9 @@ describe('tus', () => {
 
           return parts
         },
-        retryDelays                : [10],
-        endpoint                   : 'https://tus.io/uploads',
-        headers                    : {
+        retryDelays: [10],
+        endpoint   : 'https://tus.io/uploads',
+        headers    : {
           Custom: 'blargh',
         },
         metadata: {
