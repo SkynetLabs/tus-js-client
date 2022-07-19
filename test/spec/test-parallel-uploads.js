@@ -14,8 +14,8 @@ describe('tus', () => {
     })
 
     it('should throw if splitSizeIntoParts is passed without parallelUploads', () => {
-      var file = getBlob('hello world')
-      var upload = new tus.Upload(file, {
+      const file = getBlob('hello world')
+      const upload = new tus.Upload(file, {
         endpoint          : 'https://tus.io/uploads',
         splitSizeIntoParts: () => {},
         uploadUrl         : 'foo',
