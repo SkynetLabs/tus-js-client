@@ -1,3 +1,5 @@
+/* eslint-disable no-lone-blocks */
+
 const { TestHttpStack, waitableFunction, getBlob } = require('./helpers/utils')
 const tus = require('../..')
 
